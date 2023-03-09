@@ -1,0 +1,19 @@
+body[data-theme=light] .wrapper {
+    background: #fff;
+}
+
+body[data-theme=light] .sidebar {
+    background: #fff;
+}
+
+body[data-theme=light] .sidebar-content {
+    background: #fff;
+}
+
+.sidebar-item.active a {
+    background: #f5f7fb;
+}
+
+.content {
+    padding: 1rem 1rem 0.5rem;
+}
