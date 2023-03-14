@@ -22,6 +22,8 @@ class VendorController extends Controller
     public function index()
     {
         $vendors = Vendor::latest('id')->paginate($this->limit);
+        $vendorsdata = Vendor::all();
+        $allusers = response()->json($vendorsdata);
         return view('vendors.index')->with('vendors', $vendors);
     }
 
@@ -57,6 +59,7 @@ class VendorController extends Controller
             'description' => $request->description
         );
         Vendor::create($data);
+        $inserted = response()->json($data);  
         return redirect()->route('vendors.index');
     }
 
@@ -69,6 +72,7 @@ class VendorController extends Controller
     public function show($id)
     {
         $vendor = Vendor::find($id);
+        $allShows = response()->json($vendor);  
         return view('vendors.show')->with('vendor', $vendor);
     }
 
