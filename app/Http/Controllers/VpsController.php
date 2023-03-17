@@ -51,17 +51,17 @@ class VpsController extends Controller
             'bill_date' => 'required|date|max:255',
             'bill_amount' => 'required|numeric',
             //'bank_name' => 'required|max:255',
-           // 'file_name' => 'required|mimetypes:pdf',
+            'file_name' => 'required|mimetypes:pdf',
 
         ]);
         
         
        
-        /*if ($request->file('file_name') !== null) {
+        if ($request->file('file_name') !== null) {
                 $file_name = time() . '_' . $request->file('file_name')->getClientOriginalName();
                 Storage::putFileAs('public/introduction', $request->file('file_name'), $file_name);
                 $file_name = asset('storage/app/public/introduction/' . $file_name);
-            }*/
+            }
 
         $data = array(
             'creator_id' => Auth::id(),

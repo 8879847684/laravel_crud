@@ -29,4 +29,6 @@ Route::resource('vps', VpsController::class);
 Route::resource('bills', BillsController::class);
 Route::resource('vehicles', VehiclesController::class);
 Route::resource('payments', PaymentsController::class);
+Route::resource('vendorsapi', VendorApiController::class);
+
 
