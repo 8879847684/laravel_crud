@@ -16,9 +16,9 @@
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
-                            <th>Vendor Name</th>
-                            <th>Pan Number</th>
-                            <th>GST  Number</th>
+                            <th>Author Name</th>
+                            <th>Post Title</th>
+                            <th>Subject Name</th>
                             <th>Description</th>
                             <th class="text-end">Actions</th>
                         </tr>

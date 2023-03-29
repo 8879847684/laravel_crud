@@ -4,11 +4,11 @@
     <div class="container-fluid p-0">
         <div class="row mb-1">
             <div class="col-auto d-none d-sm-block">
-                <h3><strong>Vendor(s) List</strong></h3>
+                <h3><strong>Blog(s) List</strong></h3>
             </div>
 
             <div class="col-auto ms-auto text-end mt-n1">
-                <a href="{{ route('vendors.create') }}" class="btn btn-primary">Add Vendor</a>
+                <a href="{{ route('vendors.create') }}" class="btn btn-primary">Add Blogs</a>
             </div>
         </div>
         <div class="card">
@@ -17,9 +17,9 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                           <th>Vendor Name</th>
-                            <th>Pan Number</th>
-                            <th>GST  Number</th>
+                           <th>Post Name</th>
+                            <th>Blog Name</th>
+                            <th>Subject Name</th>
                             <th>Description</th>
                             <th class="text-end">Actions</th>
                         </tr>

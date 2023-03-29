@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PaymentsController;
 use App\Http\Controllers\VehiclesController;
 use App\Http\Controllers\VendorController;
+use App\Http\Controllers\VendorApiController;
 use App\Http\Controllers\VpsController;
 use Illuminate\Support\Facades\Route;
 
@@ -25,10 +26,10 @@ Route::resource('login', LoginController::class);
 Route::post('login/logout', [LoginController::class, 'logout'])->name('login.logout');
 Route::resource('dashboard', DashboardController::class);
 Route::resource('vendors', VendorController::class);
-Route::resource('vps', VpsController::class);
-Route::resource('bills', BillsController::class);
-Route::resource('vehicles', VehiclesController::class);
-Route::resource('payments', PaymentsController::class);
-Route::resource('vendorsapi', VendorApiController::class);
+// Route::resource('vps', VpsController::class);
+// Route::resource('bills', BillsController::class);
+// Route::resource('vehicles', VehiclesController::class);
+// Route::resource('payments', PaymentsController::class);
+// Route::resource('vendorsapi', VendorApiController::class);
 
 

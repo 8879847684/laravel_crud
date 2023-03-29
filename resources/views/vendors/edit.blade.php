@@ -4,11 +4,11 @@
     <div class="container-fluid p-0">
         <div class="row mb-1">
             <div class="col-auto d-none d-sm-block">
-                <h3><strong>Vendor Edit</strong></h3>
+                <h3><strong>Blog Edit</strong></h3>
             </div>
 
             <div class="col-auto ms-auto text-end mt-n1">
-                <a href="{{ route('vendors.index') }}" class="btn btn-primary">Vendor List</a>
+                <a href="{{ route('vendors.index') }}" class="btn btn-primary">Blog's List</a>
             </div>
         </div>
         <div class="card">
@@ -18,8 +18,8 @@
                     @method('PATCH')
                     <div class="row">
                         <div class="mb-3 col-md-4">
-                            <label class="form-label" for="vendorName">Vendor name</label>
-                            <input type="text" name="vendor_name" value="{{ old('vendor_name') ? old('vendor_name') : $vendor->vendor_name }}" class="form-control" id="vendorName" placeholder="Vendor name">
+                            <label class="form-label" for="vendorName">Authour name</label>
+                            <input type="text" name="vendor_name" value="{{ old('vendor_name') ? old('vendor_name') : $vendor->vendor_name }}" class="form-control" id="vendorName" placeholder="Authour name">
                             @error('vendor_name')
                                 <div class="small text-danger">
                                     {{ $message }}
@@ -27,8 +27,8 @@
                             @enderror
                         </div>
                          <div class="mb-3 col-md-4">
-                            <label class="form-label" for="pan_number">Pan Number</label>
-                            <input type="text" name="pan_number" value="{{ old('pan_number') ? old('pan_number') : $vendor->pan_number }}" class="form-control" id="pan_number" placeholder="Pan Number">
+                            <label class="form-label" for="pan_number">Post Title</label>
+                            <input type="text" name="pan_number" value="{{ old('pan_number') ? old('pan_number') : $vendor->pan_number }}" class="form-control" id="pan_number" placeholder="Post Title">
                             @error('pan_number')
                                 <div class="small text-danger">
                                     {{ $message }}
@@ -36,8 +36,8 @@
                             @enderror
                         </div>
                          <div class="mb-3 col-md-4">
-                            <label class="form-label" for="gst_number">GST Number</label>
-                            <input type="text" name="gst_number" value="{{ old('gst_number') ? old('gst_number') : $vendor->gst_number }}" class="form-control" id="gst_number" placeholder="GST Number">
+                            <label class="form-label" for="gst_number">Subject</label>
+                            <input type="text" name="gst_number" value="{{ old('gst_number') ? old('gst_number') : $vendor->gst_number }}" class="form-control" id="gst_number" placeholder="Subject">
                             @error('gst_number')
                                 <div class="small text-danger">
                                     {{ $message }}

@@ -22,9 +22,9 @@ class VendorController extends Controller
     public function index()
     {
         $vendors = Vendor::latest('id')->paginate($this->limit);
-        $vendorsdata = Vendor::all();
-        $allusers = response()->json($vendorsdata);
-        return $allusers;
+        // $vendorsdata = Vendor::all();
+        // $allusers = response()->json($vendorsdata);
+        // return $allusers;
         return view('vendors.index')->with('vendors', $vendors);
     }
 
